@@ -1,0 +1,15 @@
+﻿@model IEnumerable<VNR_Internship.Models.KhoaHoc>
+
+<div class="col-md-3">
+    <h2>Khóa học</h2>
+
+    <ul>
+        @foreach (var i in Model)
+        {
+
+            <li> <a href="/KhoaHoc/@i.ID"> @i.TenKhoaHoc  </a></li>
+        }
+
+
+    </ul>
+</div>

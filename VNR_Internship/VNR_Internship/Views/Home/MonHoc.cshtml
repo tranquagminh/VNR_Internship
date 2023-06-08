@@ -1,0 +1,16 @@
+﻿@model IEnumerable<VNR_Internship.Models.MonHoc>
+@{
+    ViewBag.Title = "MonHoc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-8">
+    <h1>Khóa học: @ViewBag.Message</h1>
+    <ol type="1">
+        @foreach(var i in Model)
+            {
+                <li>@i.TenMonHoc</li>
+            }
+      
+    </ol>
+
+</div>
